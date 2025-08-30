@@ -11,7 +11,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 # Load Dataset & Train
 DATASET_DIR = "speech_commands_v0.02"
-TARGET_LABELS = ["start", "stop", "up", "down", "left", "right"]
+TARGET_LABELS = ["down", "left", "right"]
 
 def extract_features(file_path):
     y, sr = librosa.load(file_path, sr=16000)
